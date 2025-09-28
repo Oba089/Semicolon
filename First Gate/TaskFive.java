@@ -1,11 +1,11 @@
 public class TaskFive {
 	public static void main(String[] args) {
 
-	for(int a = 4 ; a <= 10; a = a +4) {
+	int num = 10;
 
-	for(int b = 1; b < a; a = a+1) {
+	for(int a = 4 ; a <= 10; a = a *2) {
 
-	if(1 >)
+	for(int b = 1; b <= a/2 ; a = a+1) {
 
 	System.out.print(a);
 }
