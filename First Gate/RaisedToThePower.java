@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class RaisedToThePower {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the base number: ");
+        int base = input.nextInt();
+
+        System.out.print("Enter the exponent: ");
+        int exponent = input.nextInt();
+
+        int result = 1;
+
+        if (exponent >= 0) {
+            for (int i = 1; i <= exponent; i++) {
+
+	result *= base;
+        }
+        System.out.println(base + " raised to the power " + exponent + " is: " + result);
+        } 
+	else {
+        double fractResult = 1.0;
+        for (int i = 1; i <= -exponent; i++) {
+        fractResult /= base;
+        }
+        System.out.println(base + " raised to the power " + exponent + " is: " + fracResult);
+        }
+
+    }
+}
