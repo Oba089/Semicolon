@@ -5,7 +5,7 @@ public class Factorial {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int num = scanner.nextInt();
+        int num = input.nextInt();
 
         int factorial = 1;
 
@@ -13,7 +13,7 @@ public class Factorial {
             System.out.println("Factorial is not defined for negative numbers.");
         } else {
             for (int a = 1; a <= num; a++) {
-                factorial *= i;
+                factorial *= a;
             }
             System.out.println("Factorial of " + num + " is: " + factorial);
         }

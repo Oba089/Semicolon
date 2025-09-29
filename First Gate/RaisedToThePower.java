@@ -25,7 +25,7 @@ public class RaisedToThePower {
         for (int i = 1; i <= -exponent; i++) {
         fractResult /= base;
         }
-        System.out.println(base + " raised to the power " + exponent + " is: " + fracResult);
+        System.out.println(base + " raised to the power " + exponent + " is: " + fractResult);
         }
 
     }
