@@ -19,4 +19,4 @@ if number1 <= number2:
     print(f"{number1} is less than or equal to {number2}")
 
 if number1 >= number2:
-    print(f"{number1} is greater than or equal to {number2}")
+    print(f"{number1} is greater than or equal to {number2}")3.5
