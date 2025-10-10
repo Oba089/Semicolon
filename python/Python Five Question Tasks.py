@@ -3,8 +3,6 @@ Enter a name
 If name is equal to "Alex" then
 Display "Hello, friend!" Else Display "Hi, stranger!"
 
-# Greeting Chooser
-
 name = input("Enter your name: ")
 
 if name == "Alex":

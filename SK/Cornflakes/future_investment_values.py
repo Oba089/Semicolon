@@ -1,9 +1,9 @@
-def future_investment_values(investment_amount, monthly_interest_rate, yearly):
+def future_investment(investment_amount, monthly_interest_rate, yearly):
 
-	numbers_of_months = yearly * 12
+	number_of_months = yearly * 12
 
-	future_investment_values = investment_amount * (1 + monthly_interest_rate) ** numbers_of_months
+	future_investment_values = investment_amount * (1 + monthly_interest_rate) ** number_of_months
 
 	return round(future_investment_values, 2)
 
-print(future_investment_values(1000, 0.01, 5))
+print(future_investment_(1000, 0.01, 5))

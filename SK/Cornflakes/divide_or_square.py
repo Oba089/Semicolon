@@ -1,4 +1,4 @@
-def divide_or_square(number):
+def divide_squares(number):
         
         if number % 5 == 0:
             return number ** 0.5
@@ -6,4 +6,4 @@ def divide_or_square(number):
         if number % 5 != 0:
             return number % 5
 
-print(divide_or_square( 10)) 
+print(divide_squares( 10)) 

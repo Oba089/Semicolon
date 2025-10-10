@@ -1,12 +1,12 @@
-def oga_discount(price,discount):
+def discount(amount,discount):
 
-	discount_amount = price - (price*discount/100)
+	discount_amount = amount - (amount*discount/100)
 	return discount_amount
 
 user1 = int(input("Enter discount: "))
 
-user2 = int(input("Enter price: "))
+user2 = int(input("Enter amount: "))
 
-result = oga_discount(user1, user2)
+result = discount(firstuser, seconduser)
 
 print(result)
