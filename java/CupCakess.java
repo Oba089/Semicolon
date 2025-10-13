@@ -1,3 +1,5 @@
+1.
+
 public class SmallestNumber {
 
  public static void main(String[] args) {
@@ -10,6 +12,8 @@ public class SmallestNumber {
     }
 }
 
+2.
+
 public class ArrayAverage {
  
   public static void main(String[] args) {
@@ -19,6 +23,8 @@ public class ArrayAverage {
         System.out.println("The average is: " + averageArray(number));
     }
 }
+
+3.
 
 public class CountOccurrences {
   public static void main(String[] args) {
@@ -33,6 +39,8 @@ public class CountOccurrences {
     }
 }
 
+4.
+
 public class ArrayContainsElement {
 
 	public static void main(String[] args) {
@@ -45,6 +53,8 @@ public class ArrayContainsElement {
  System.out.println("Does the array contain " + target2 + "? " + containsElement(numbers, target2));
         }
 }
+
+5.
 
 public class GetFirstElement {
 
@@ -59,3 +69,64 @@ public class GetFirstElement {
   
     }
 }
+
+
+6.
+
+public class Main {
+
+  public static void main(String[] args) {
+        int[] array1 = {1, 2, 3};
+        int[] array2 = {};
+
+        System.out.println(getLastElement(array1)); 
+        System.out.println(getLastElement(array2)); 
+    }
+}
+
+
+7.
+
+public class Main {
+
+    public static void main(String[] args) {
+        int[] array1 = {10, 20, 30, 40};
+        int[] array2 = {};
+
+        System.out.println(countElements(array1)); 
+        System.out.println(countElements(array2)); 
+    }
+}
+
+8.
+
+public class MiddleElement {
+
+    public static void main(String[] args) {
+        int[] example1 = {1, 2, 3};
+        int[] example2 = {1, 2, 3, 4};
+        int[] example3 = {};
+        
+        System.out.println(getMiddleElement(example1)); 
+        System.out.println(getMiddleElement(example2)); 
+        System.out.println(getMiddleElement(example3)); 
+    }
+}
+
+
+9.
+
+public class SwapFirstLast {
+
+
+public static void main(String[] args) {
+        int[] original = {10, 20, 30, 40, 50};
+        int[] swapped = swapFirstAndLast(original);
+
+        System.out.print("Swapped array: ");
+        for (int num : swapped) {
+            System.out.print(num + " ");
+        }
+    }
+}
+

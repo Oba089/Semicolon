@@ -1,3 +1,5 @@
+1.
+
 public class CupCakes {
 
 
@@ -24,7 +26,9 @@ public class CupCakes {
     }
 
 
-    public static double averageArray(int[] arr) {
+2.
+
+public static double averageArray(int[] arr) {
         
         if (number == length == 0) {
             return 0;
@@ -38,7 +42,9 @@ public class CupCakes {
         return sum / number.length;
     }
     
-    public static int countOccurence(int[] number, int target) {
+3.
+
+public static int countOccurence(int[] number, int target) {
 
         int count = 0;
 
@@ -52,6 +58,9 @@ public class CupCakes {
         return count;
     }
 
+
+4.
+
 public static boolean containsElement(int[] number, int target) {
         
         for (int element: number) {
@@ -64,9 +73,68 @@ public static boolean containsElement(int[] number, int target) {
         return false;
     }
 
- public static int getFirstElement(int[] arr) {
+5.
+
+public static int getFirstElement(int[] arr) {
 
         if (array == null || array.length == 0) {
             return 0;
         }
         return array[0];
+
+
+6.
+
+public static int getLastElement(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            return 0;
+        }
+        return arr[arr.length - 1];
+    }
+
+7.
+
+public static int countElements(int[] arr) {
+        int count = 0;
+        try {
+            while (true) {
+                int temp = arr[count];
+                count++;
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+
+        }
+        return count;
+    }
+
+8.
+
+public static Integer getMiddleElement(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            return null;
+        }
+        int midIndex = (arr.length - 1) / 2;
+        return arr[midIndex];
+    }
+
+
+
+
+9.
+
+public static int[] swapFirstAndLast(int[] arr) {
+        if (arr == null || arr.length < 2) {
+      
+            return arr;
+        }
+
+        int[] result = arr.clone();
+
+        int temp = result[0];
+        result[0] = result[result.length - 1];
+        result[result.length - 1] = temp;
+
+        return result;
+    }
+
+
