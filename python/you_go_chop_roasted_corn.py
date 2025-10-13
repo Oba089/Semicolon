@@ -26,7 +26,7 @@ print(add_ing_or_ly('play'))
 
 def longest_word(words):
 
-    	if not words:  # Check if the list is empty
+    	if not words:
         return None, 0
     	longest = max(words, key=len)
     	return longest, len(longest)
@@ -56,7 +56,7 @@ print(remove_odd_index_chars("python"))
 
 def find_min_number(numbers):
 
-    if not numbers:  # Check if the list is empty
+    if not numbers:
 
         return None
 
@@ -67,7 +67,7 @@ print(find_min_number([-3, 0, 4, -10]))
 
 def repeat_string(s, n):
 
-    if isinstance(n, float):  # Check if n is a float
+    if isinstance(n, float): 
 
         return s
 
