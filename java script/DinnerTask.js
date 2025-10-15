@@ -1,48 +1,48 @@
 1.
 
-for (let i = 2; i <= 100; i += 2) {
-    process.stdout.write(i + " ");
+for (let number = 2; number <= 100; number += 2) {
+    process.stdout.write( number + " ");
 }
 
 2.
 
-for (let i = 51; i < 100; i += 2) {
-    console.log(i);
+for (let number = 51; number < 100; number += 2) {
+    console.log(number);
 }
 
 3.
 
-for (let i = 100; i >= 1; i--) {
+for (let number = 100; number >= 1; number--) {
     console.log(i);
 }
 
 4.
 
-for (let i = 1; i <= 20; i++) {
-    console.log(Square of ${i} is ${i * i});
+for (let number = 1; number <= 20; number++) {
+    console.log(Square of ${i} is ${number * number});
 }
 
 5.
 
-for (let i = 1; i <= 50; i++) {
-    if (i % 3 === 0) {
-        console.log(i);
+for (let number = 1; number <= 50; number++) {
+    if (number % 3 === 0) {
+        console.log(number);
     }
 }
 
 6.
 
-for (let i = 1; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log(i);
+for (let number = 1; number <= 100; number++) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        console.log(number);
     }
 }
 
 7.
 
 let count = 0;
-for (let i = 1; i <= 100; i++) {
-    if (i % 7 === 0) {
+for (let count = 1; count <= 100; count++) {
+    if (count % 7 === 0) {
         count++;
     }
 }
@@ -51,23 +51,23 @@ console.log("Count of numbers divisible by 7 between 1 and 100: " + count);
 8.
 
 let sum = 0;
-for (let i = 1; i <= 50; i++) {
-    sum += i;
+for (let number = 1; number <= 50; number++) {
+    sum += number;
 }
 console.log("Sum of the first 50 natural numbers: " + sum);
 
 9.
 
 let product = 1;
-for (let i = 1; i <= 10; i++) {
-    product *= i;
+for (let number = 1; number <= 10; number++) {
+    product *= number;
 }
 console.log("Product of the first 10 natural numbers: " + product);
 
 10.
 
-for (let i = 65; i <= 90; i++) {
-    process.stdout.write(String.fromCharCode(i) + " ");
+for (let number = 65; number <= 90; number++) {
+    process.stdout.write(String.fromCharCode(number) + " ");
 }
 console.log();
 
@@ -80,14 +80,14 @@ for (let i = 1; i <= 10; i++) {
 
 12.
 
-const str = "Hello, World!";
-for (let i = 0; i < str.length; i++) {
-    console.log(str[i]);
+const str = "Good, Morning!";
+for (let a = 0; a < str.length; a++) {
+    console.log(str[a]);
 }
 
 13.
 
-const input = "Here is an example sentence.";
+const input = "The wait is over.";
 let count = 0;
 
 for (let char of input) {
@@ -100,7 +100,7 @@ console.log("Number of 'e's:", count);
 
 14.
 
-const input = "Hello World!";
+const input = "Glory Hallelujah!";
 let result = "";
 
 for (let char of input) {
@@ -116,11 +116,11 @@ console.log(result);
 
 15.
 
-let input = "HeLLo WoRLD!";
+let input = "GoOD morNING!";
 let result = "";
 
-for (let i = 0; i < input.length; i++) {
-    let c = input[i];
+for (let a = 0; a < input.length; a++) {
+    let c = input[a];
     if (c >= 'A' && c <= 'Z') {
         
         result += String.fromCharCode(c.charCodeAt(0) + 32);
@@ -134,12 +134,12 @@ console.log("Lowercase:", result);
 
 16.
 
-let input = "Hello World!";
+let input = "Beautiful Day!";
 let vowels = "aeiouAEIOU";
 let count = 0;
 
-for (let i = 0; i < input.length; i++) {
-    let c = input[i];
+for (let a = 0; a < input.length; a++) {
+    let c = input[a];
     if (vowels.includes(c)) {
         count++;
     }
@@ -150,9 +150,9 @@ console.log("Number of vowels:", count);
 
 17.
 
-let number = 123456;
+let number = 34567;
 let count = 0;
-let temp = Math.abs(number);  // Handle negative numbers
+let temp = Math.abs(number); 
 
 if (temp === 0) {
     count = 1;
@@ -168,7 +168,7 @@ console.log("Digit count:", count);
 
 18.
 
-let number = 12345;
+let number = 34567;
 let sum = 0;
 
 while (number > 0) {
