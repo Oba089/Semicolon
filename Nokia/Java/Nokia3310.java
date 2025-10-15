@@ -53,7 +53,7 @@ public class Nokia3310 {
                     }
                 }
 
-                
+                 
                 case 1 -> {
                     System.out.println("""
                         Phone book
