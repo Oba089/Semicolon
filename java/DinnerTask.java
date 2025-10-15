@@ -2,8 +2,8 @@
 
 public class EvenNumbers {
     public static void main(String[] args) {
-        for (int i = 2; i <= 100; i += 2) {
-            System.out.print(i + " ");
+        for (int a = 2; a <= 100; a += 2) {
+            System.out.print(a + " ");
         }
     }
 }
@@ -12,8 +12,8 @@ public class EvenNumbers {
 
 public class OddNumbers {
     public static void main(String[] args) {
-        for (int i = 51; i < 100; i += 2) {
-            System.out.println(i);
+        for (int a = 51; a < 100; a += 2) {
+            System.out.println(a);
         }
     }
 }
@@ -22,8 +22,8 @@ public class OddNumbers {
 
 public class Countdown {
     public static void main(String[] args) {
-        for (int i = 100; i >= 1; i--) {
-            System.out.println(i);
+        for (int a = 100; a >= 1; a--) {
+            System.out.println(a);
         }
     }
 }
@@ -32,8 +32,8 @@ public class Countdown {
 
 public class SquareNumbers {
     public static void main(String[] args) {
-        for (int i = 1; i <= 20; i++) {
-            System.out.println("Square of " + i + " is " + (i * i));
+        for (int a = 1; a <= 20; a++) {
+            System.out.println("Square of " + a + " is " + (a * a));
         }
     }
 }

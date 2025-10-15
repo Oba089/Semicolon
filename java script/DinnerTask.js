@@ -1,7 +1,7 @@
 1.
 
 for (let number = 2; number <= 100; number += 2) {
-    process.stdout.write( number + " ");
+    console.log( number + " ");
 }
 
 2.
@@ -73,9 +73,9 @@ console.log();
 
 11.
 
-const number = 7;  // Change this number to print a different table
-for (let i = 1; i <= 10; i++) {
-    console.log(${number} x ${i} = ${number * i});
+const number = 7; 
+for (let number = 1; number <= 10; number++) {
+    console.log(${numbers} x ${number} = ${numbers * number});
 }
 
 12.
@@ -150,7 +150,7 @@ console.log("Number of vowels:", count);
 
 17.
 
-let number = 34567;
+let number = 345678;
 let count = 0;
 let temp = Math.abs(number); 
 

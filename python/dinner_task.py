@@ -1,39 +1,39 @@
 1.
 
-for i in range(2, 101, 2):
-    print(i, end=' ')
+for number in range(2, 101, 2):
+    print(number, end=' ')
 
 2.
 
-for i in range(51, 100, 2):
-    print(i)
+for number in range(51, 100, 2):
+    print(number)
 
 3.
 
-for i in range(100, 0, -1):
+for number in range(100, 0, -1):
     print(i)
 
 4.
 
-for i in range(1, 21):
-    print(f"Square of {i} is {i * i}")
+for number in range(1, 21):
+    print(f"Square of {number} is {number * number}")
 
 5.
 
-for i in range(1, 51):
-    if i % 3 == 0:
-        print(i)
+for number in range(1, 51):
+    if number % 3 == 0:
+        print(number)
 
 6.
 
-for i in range(1, 101):
-    if i % 3 == 0 and i % 5 == 0:
-        print(i)
+for number in range(1, 101):
+    if number % 3 == 0 and number % 5 == 0:
+        print(number)
 7.
 
 count = 0
-for i in range(1, 101):
-    if i % 7 == 0:
+for count in range(1, 101):
+    if count % 7 == 0:
         count += 1
 
 print(f"Count of numbers divisible by 7 between 1 and 100: {count}")
@@ -41,16 +41,16 @@ print(f"Count of numbers divisible by 7 between 1 and 100: {count}")
 8.
 
 sum = 0
-for i in range(1, 51):
-    sum += i
+for number in range(1, 51):
+    sum += number
 
 print(f"Sum of the first 50 natural numbers: {sum}")
 
 9.
 
 product = 1
-for i in range(1, 11):
-    product *= i
+for number in range(1, 11):
+    product *= number
 
 print(f"Product of the first 10 natural numbers: {product}")
 
@@ -62,30 +62,30 @@ print()
 
 11.
 
-number = 7  # Change this number to print a different table
+number = 7 
 for i in range(1, 11):
     print(f"{number} x {i} = {number * i}")
 
 12.
 
-str = "Hello, World!"
+str = "Good, Morning!"
 for char in str:
     print(char)
 
 13.
 
-input_str = "Here is an example sentence."
+input_str = "The wait is over."
 count = input_str.count('e')
 print("Number of 'e's:", count)
 
 14.
 
-input_str = "Hello World!"
+input_str = "Glory Hallelujah!"
 result = ""
 
 for char in input_str:
     if 'a' <= char <= 'z':
-        # Convert to uppercase by subtracting 32 from ASCII code
+   
         result += chr(ord(char) - 32)
     else:
         result += char
@@ -94,7 +94,7 @@ print(result)
 
 15.
 
-input_str = "HeLLo WoRLD!"
+input_str = "GoOD morNING!"
 result = ""
 
 for char in input_str:
@@ -109,7 +109,7 @@ print("Lowercase:", result)
 
 16.
 
-input_str = "Hello World!"
+input_str = "Beautiful Day!"
 vowels = "aeiouAEIOU"
 count = 0
 
@@ -122,9 +122,9 @@ print("Number of vowels:", count)
 
 17.
 
-number = 123456
+number = 345678
 count = 0
-temp = abs(number)  # Handle negative numbers
+temp = abs(number) 
 
 if temp == 0:
     count = 1
@@ -138,7 +138,7 @@ print("Digit count:", count)
 
 18.
 
-number = 12345
+number = 34567
 sum_of_digits = sum(int(digit) for digit in str(number))
 print("Sum of digits:", sum_of_digits)
 
