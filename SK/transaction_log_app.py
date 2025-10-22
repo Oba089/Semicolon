@@ -1,59 +1,66 @@
-def main_menu():
+amount = 0
+transaction_database = []
 
-	balance = 0
-   
-	while True:
+def print_main_menu():
 
-		print(""" 
-Welcome to Transaction Log App	
-1. Deposit		
-2. Withdraw	
-3. Show Transactions	
-4. Exit
-""")
-	option = input("Enter your choice: ")
-        
+	prompt = """
+		WELCOME TO TRANSACTION LOG APP
+		Press any key from 1 - 3:
+
+		1 => Deposit		
+		2 => Withdraw
+		3 => Transaction
+		4 => Back to main menu
+		""";
+	print(prompt)
+
+	transaction_menu = input("Enter any key from 1- 4: ")
+	match transaction_menu :
+
+		case "1": deposit()	
+		case "2": withdraw()
+		case "3": history()							
+		case "4": balance()
+		case _ : 
+			print("you entered wrong! enter the correct number")
+			print_main_menu()
+
 def deposit():
-	if option == '1':
-		amount = int(input("Enter deposit amount: "))
-		balance += amount
-		transactions.append(f"Deposited: {deposit_amount} | New Balance: {balance}")
 
-		print(f"Deposited: {amount} | New Balance: {balance}")
+	print("DEPOSIT ANY AMOUNT")
+	amount1 = int(input("Enter any amount to deposit: "))
+	print(f"Deposited successfully, you deposited $ {amount1}")
+	amount += amount1
+	transaction = f"deposited ${amount1} | new Balance: ${amount}"
+	transaction_database.append(transaction)
+	print(f"Your new account balance is $ {amount}")
+	print_main_menu()
+
 
 def withdraw():
-	elif (option) == '2':
-		amount = int(input("Enter withdrawal amount: "))
-		if amount <= balance:
-		balance -= amount
-		transactions.append(f"Withdrew: {withdraw_amount} | New Balance: {balance}")
+	
+	print ("WITHDRAW  ANY AMOUNT")
+	withdraw = int(input("Enter withdrawal amount:"))
+	if withdraw > amount:
+		print("insufficient funds")
+		withdraw()
+	print(f"Debited successfully, you withdew ${withdraw}")
+	amount -= withdraw
+	print(f"Your new account balance is $ {amount}.")
+	transaction = f"withdraw ${withdraw} | new balance : ${amount}"
+	transaction_database.append(transaction)
+	print_main_menu()
 
-		print(f"Withdrew: {amount} | New Balance: {balance}")
-		
-	else:
-	   	print("Insufficient balance!")
+
+def history():
+	
+	print("TRANSACTION HISTORY")
+	for history in transaction_database:
+		print(history)
+	print_main_menu()
 
 
-def show_transaction();
-        
-	elif (option) == '3':
-	  	print("Transactions so far:")
-
-	if not transactions:
-
-		print("No transactions yet.")
-
-	else:
-                
-	for i, transaction in enumerate(transactions, 1):
-                    
-		print(f"{i}. {transaction}")
-               
-	elif (option) == '4':
-
-		print(f"Final Balance: {balance}")
-		print("Thank you for using Transaction Log App!")
-            	break
-
-	else:
-		print("Invalid option! Please try again.")
+def balance():
+	
+	print (f"your remaining balance is ${amount}")
+	print_main_menu()
